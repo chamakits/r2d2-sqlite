@@ -19,7 +19,12 @@ path = "tests/test.rs"
 
 [dependencies]
 r2d2 = "^0.7"
-rusqlite = "^0.7"
+#rusqlite = "^0.7"
+
+[dependencies.rusqlite]
+path = "../rusqlite"
+features = ["bundled"]
+
 
 [dev-dependencies]
 tempdir = "^0.3"
